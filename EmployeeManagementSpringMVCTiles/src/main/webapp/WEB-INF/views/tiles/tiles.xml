@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="homescreen" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/homescreen.jsp" />  
+   </definition>  
+     <!-- Admin view Page -->
+   <definition name="person" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/person.jsp" />  
+   </definition>
+   
+   
+ <!-- Admin add Page -->
+   <definition name="addPerson" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/addPerson.jsp" />  
+   </definition>
+   
+   <!-- Admin Edit Page -->
+   <definition name="updatePerson" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/updatePerson.jsp" />  
+   </definition>
+   <!-- Admin leave Page -->
+   <definition name="leave" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/leave.jsp" />  
+   </definition>
+   
+   <!-- Admin leave Page -->
+   <definition name="sendApproveEmailPerson" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/sendApproveEmailPerson.jsp" />  
+   </definition>
+    <!-- Admin leave Page -->
+   <definition name="sendRejectEmailPerson" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/sendRejectEmailPerson.jsp" />  
+   </definition>
+   <!-- Admin leave Page -->
+   <definition name="mailSentApprove" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/mailSentApprove.jsp" />  
+   </definition>
+   
+    <!-- Admin leave Page -->
+   <definition name="mailSentReject" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/mailSentReject.jsp" />  
+   </definition>
+   
+   <!-- Employee leave Page -->
+   <definition name="leave_application" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/leave_application.jsp" />  
+   </definition>
+     <!-- Mail Page -->
+   <definition name="sendEmailPerson" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/sendEmailPerson.jsp" />  
+   </definition>
+ 
+   <definition name="mailSent" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/mailSent.jsp" />  
+   </definition>
+   <definition name="employee_homepage" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/employee_homepage.jsp" />  
+   </definition>
+   
+   <definition name="viewEmpProfile" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/viewEmpProfile.jsp" />  
+   </definition>
+   
+     
+   <definition name="enterID" extends="base-definition">  
+       <put-attribute name="title" value="Welcome Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/enterID.jsp" />  
+   </definition>
+   
+   
+
+</tiles-definitions>
